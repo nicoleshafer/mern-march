@@ -1,10 +1,11 @@
+
 import './App.css';
-import Forms from './components/Forms';
+import Squares from './components/Squares';
 
 function App() {
   return (
     <div className="App">
-      <Forms />
+      <Squares />
     </div>
   );
 }
