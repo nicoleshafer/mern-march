@@ -1,4 +1,5 @@
 import './App.css';
+import React from "react";
 import List from './Components/List';
 
 
@@ -7,7 +8,7 @@ function App() {
     <div>
       <List />
     </div>
-  );
+  )
 }
 
 export default App;

@@ -36,11 +36,23 @@ const Form = (e) => {
                 <div>
                     <label >First Name</label>
                     <input type="text" name="firstName" onChange={changeFirstName} />
+                    {
+                    firstName.length < 3 ?
+                    null :
+                    "Must have more than 2 characters"
+                }
                 </div>
+                
                 <div>
                     <label >Last Name</label>
                     <input type="text" name="lastName" onChange={changeLastName} />
+                    {
+                    lastName.length < 3 ?
+                    null :
+                    "Must have more than 2 characters"
+                }
                 </div>
+                
                 <div>
                     <label >Email</label>
                     <input type="email" name="email" onChange={changeEmail} />
@@ -53,14 +65,14 @@ const Form = (e) => {
                     <label >Confirm Password</label>
                     <input type="password" name="password" onChange={changeConfirm} />
                 </div>
-                <div>
+                {/* <div>
                     <p>Your form data:</p>
                     <p>First Name: {firstName} </p>
                     <p>Last Name: {lastName}</p>
                     <p>Email: {email}</p>
                     <p>Password: {password}</p>
                     <p>Confirm Password:{confirm}</p>
-                </div>
+                </div> */}
             </form>
         </div>
     );

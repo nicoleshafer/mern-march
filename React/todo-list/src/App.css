@@ -1,4 +1,57 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
+}
+
+
+.active{
+  text-decoration: line-through
+}
+
+.header{
+  width: 100%;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+
+
+form{
+  border-bottom: 2px solid rgb(50, 67, 66);
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  width:60%;
+}
+
+.button{
+  width:100px;
+  height:30px;
+  color:white;
+  background-color: slategray;
+  
+}
+input{
+  width:300px;
+  height:25px;
+  border: 2px solid slategray;
+  color:black;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:slategrey
+}
+
+.todoSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  padding-top:20px;
 }
 
