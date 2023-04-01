@@ -27,7 +27,24 @@ const companyObject = () => {
     }
 }
 
-console.log(userObject());
-console.log(companyObject);
+app.get('/api/user/new', (req,res) =>{
+    const newUser = userObject();
+    res.json(newUser)
+})
+app.get('/api/companies/new', (req,res) =>{
+    const newCompany = companyObject();
+    res.json(newCompany)
+})
+app.get('/api/user/company', (req,res) =>{
+    const newUser = companyObject();
+    const newCompany = companyObject()
+    const newObject = {
+        user : newUser,
+        company : newCompany,
+    }
+    res.json(newObject)
+})
+
+
 
 app.listen( port, () => console.log(`Listening on port: ${port}`) );
