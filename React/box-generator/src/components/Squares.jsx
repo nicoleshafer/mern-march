@@ -1,19 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Squares = () => {
+const Squares = (props) => {
+const {changeColor, setChangeColor} = props
     return (
-        <div>
-            <div className='inputDiv'>
-                <h2>Color</h2>
-                <form>
-                    <input type="text" name='colorInput' />
-                </form>
-                <button>Add</button>
-            </div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
+        <div className='boxContainer'>
+            <div className="square" className="colorBlock"></div>
+            <div className="square" className="colorBlock"></div>
+            <div className="square" className="colorBlock"></div>
+            <div className="square" className="colorBlock"></div>
+            <div className="square" className="colorBlock"></div>
         </div>
     );
 }

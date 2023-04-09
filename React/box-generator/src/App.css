@@ -2,11 +2,24 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .inputDiv{
   display: flex;
   align-items: center;
   gap:10px;
+}
+
+.colorBlock{
+  width:120px;
+  height:120px;
+  border: 2px solid black;
+}
+
+.boxContainer{
+  display: flex;
+  gap:30px;
 }
