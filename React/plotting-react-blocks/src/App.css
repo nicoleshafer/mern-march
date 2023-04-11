@@ -1,0 +1,48 @@
+.app{
+  height: 800px;
+  width:900px;
+  border:2px solid black;
+  display: flex;
+  background-color: silver;
+  flex-wrap: wrap;
+}
+
+.nav{
+  height: 400px;
+  width:200px;
+  border:2px solid black;
+  background-color: rgb(111,168,220);
+  margin: 0 20px;
+}
+
+.header{
+  background-color: rgb(106,168,79);
+  height: 120px;
+  width:850px;
+  border:2px solid black;
+  margin:20px 20px 0 20px;
+}
+
+.main{
+  background-color:rgb(224,102,102);
+  height: 500px;
+  width:600px;
+  border:2px solid black;
+  margin: 0 20px 20px 20px;
+  z-index: 0;
+}
+
+.subContents{
+  background-color: rgb(255,217,102);
+  height: 100px;
+  width:200px;
+  border:2px solid black;
+  z-index: 2;
+}
+
+.ad{
+  background-color:rgb(180,167,214);
+  height: 100px;
+  width:100px;
+  border:2px solid black;
+}
