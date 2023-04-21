@@ -54,7 +54,7 @@ const Form = (props) => {
             <button className="createBtn" >
                 Create
             </button>
-            <input className="submit-input" type="submit" value="Create" />
+            {/* <input className="submit-input" type="submit" value="Create" /> */}
             </form>
         </div>
     );

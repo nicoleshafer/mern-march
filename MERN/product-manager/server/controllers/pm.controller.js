@@ -33,6 +33,6 @@ module.exports.updateProduct = (req,res) => {
 
 module.exports.deleteProduct = (req, res) => {
     Product.deleteOne({_id: req.params._id})
-    .then((res) => res.json)(res)
-    .catch(err => console.log(err))
+    .then((deletedProduct) => res.json(deletedProduct))
+    .catch((err) => console.log(err))
 }
