@@ -2,9 +2,6 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 
-// const {product, setProduct}= props
-// const {price, setPrice} =props
-// const {description, setDescription} =props
 
 const All = (props) => {
 

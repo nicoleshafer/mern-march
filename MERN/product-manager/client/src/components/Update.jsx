@@ -62,7 +62,7 @@ const Update = (props) => {
                         value={description} />
                 </div>
                 <button className="createBtn" type="submit">
-                Update
+                Edit Pet
                 </button>
 
 
