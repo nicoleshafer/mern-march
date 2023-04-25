@@ -6,14 +6,14 @@ module.exports.getAuthors = (req, res) => {
         res.json({allAuthors})
     })
     .catch((err) => {
-        res.json({message: 'Something went wrong', error:err})
+        res.json({message: 'Something went wrong', err})
     })
 
 }
 
 module.exports.createAuthor = (req, res) => {
     Author.create(req.body)
-    .then((newAuthor) =>
-    res.json(newAuthor))
+    .then((allAuthors) =>
+    res.json(allAuthors))
     .catch((err) => console.log(err))
 }
