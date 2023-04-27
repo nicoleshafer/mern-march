@@ -17,3 +17,27 @@ module.exports.createAuthor = (req, res) => {
     res.json(allAuthors))
     .catch((err) => console.log(err))
 }
+
+module.exports.getAuthorById = (req, res) => {
+    const {params} = req;
+    Author.findOne({_id:params._id})
+    .then((author) => res.json(author))
+    .catch((err) => console.log(err))
+}
+
+module.exports.updateAuthor = (req, res) => {
+    Author.findByIdAndUpdate({_id: req.params._id}, req.body, {
+        new: true,
+        runValidators: true,
+    })
+    .then(updatedAuthor =>res.json(updatedAuthor))
+    .catch(err => {
+        res.status(400).json(err)
+    })
+}
+
+module.exports.deleteAuthor =(req, res) => {
+    Author.deleteOne({_id: req.params._id})
+    .then((deletedAuthor) => res.json(deletedAuthor))
+    .catch(err => console.log(err))
+}

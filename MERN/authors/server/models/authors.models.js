@@ -1,9 +1,12 @@
 const mongoose = require('mongoose')
 
 const AuthorSchema = new mongoose.Schema({
-    name:{
-        type:String
+    author:{
+        type:String,
     },
+    quote:{
+        type:String,
+    }
 
 }, {timestamps:true});
 
